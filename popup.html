@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Techers Launcher</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/cd10289f45.js" crossorigin="anonymous"></script>
+    <style>
+        html, body {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            margin:0;
+            min-height: 180px;
+            padding:0;
+            width: 384px;
+        }
+
+        h1 {
+            font-family: "Menlo", monospace;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            color: #ef4254;
+        }
+
+        a:link, a:visited {
+            color: #000;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .modal-header{
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-content{
+            padding: 0 22px;
+        }
+
+        .modal-icons{
+            border-top: 0.5px solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+
+        .logo {
+            padding: 16px;
+        }
+        
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version{
+            color: #444;
+            font-size: 18px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex:hover {
+            opacity: 0.4;
+        }
+
+        .flex .fa , .flex .fab, .flex .fas{
+            font-size: 40px;
+            color: #ef4254;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src="images/techers-logo.png" alt="Techers Launcher" class="logo-icon"> Techers Launcher <span class="version">(1.0.0)</span>
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>
+            Easily access Techers Links
+        </p>
+    </div>
+    <div class="modal-icons">
+        <div class="flex-container">
+            <div class="flex">
+                <a href="https://elearning.uh.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_42_1" target="_blank">
+                    <i class="fas fa-clipboard"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href=https://www.casa.uh.edu/CourseWare2008/Root/Pages/CW/Users/Common/Courses.aspx target="_blank">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://accessuh.uh.edu/login.php" target="_blank">
+                    <i class="fas fa-university"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
